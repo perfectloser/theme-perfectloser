@@ -1,6 +1,6 @@
-# Chris Morrell's Fish Theme
+# PerfectLoser's Theme
 
-This is a theme I designed for myself but have given to a few friends and decided to publish for others' enjoyment.
+This is a custom version of the CMorrell's fish theme.  I wanted to add Ruby Version and have the prompt on a second line.
 
 ![Chris Morrell's Fish Theme](https://cloud.githubusercontent.com/assets/21592/4770904/8a58e026-5b89-11e4-927c-42a387b41df0.gif)
 
