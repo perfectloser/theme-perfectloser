@@ -57,8 +57,14 @@ function show_pwd -d "Show the current directory"
   prompt_segment normal blue "$pad$pwd "
 end
 
+function show_ruby -d "Show the current version of Ruby"
+  set_color red
+  printf (chruby | grep "*" | cut -f2- -d'-' )
+end
+
 # Show prompt w/ privilege cue
 function show_prompt -d "Shows prompt with cue for current priv"
+  printf "\n"
   set -l uid (id -u $USER)
     if [ $uid -eq 0 ]
     prompt_segment red white " ! "
@@ -78,5 +84,6 @@ function fish_prompt
   show_virtualenv
   show_user
   show_pwd
+  show_ruby
   show_prompt
 end
